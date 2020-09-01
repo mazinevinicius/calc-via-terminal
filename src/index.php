@@ -46,6 +46,9 @@ switch ($menu) {
         
         echo sprintf("Resultado: %s", $fatorial);
         break;
+    case '3':
+        echo sprintf("Resultado: %s", $operacao->numero1 * $operacao->numero1);
+        break;
         default:
     break;
 }
