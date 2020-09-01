@@ -39,6 +39,13 @@ switch ($menu) {
     case '1':
         echo sprintf("Resultado: %s", sqrt($operacao->numero1));
         break;
+    case '2':
+        $fatorial = 1;
+        $numero = $operacao->numero1;
+        for($count=1; $count<=$numero; $count++) $fatorial *= $count;
+        
+        echo sprintf("Resultado: %s", $fatorial);
+        break;
         default:
     break;
 }
